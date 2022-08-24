@@ -11,6 +11,7 @@ from PyRAI2MD.Quantum_Chemistry.qc_molcas import MOLCAS
 from PyRAI2MD.Quantum_Chemistry.qc_bagel import BAGEL
 from PyRAI2MD.Quantum_Chemistry.qc_molcas_tinker import MOLCAS_TINKER
 from PyRAI2MD.Machine_Learning.model_NN import DNN
+from PyRAI2MD.Machine_Learning.fcnn import FCNN
 ##from PyRAI2MD.Machine_Learning.model_GCNN import GCNN
 
 class QM:
@@ -37,6 +38,7 @@ class QM:
             'mlctkr' : MOLCAS_TINKER,
             'bagel'  : BAGEL,
             'nn'     : DNN,
+            'fcnn'   : FCNN,
           ##'gcnn'   : GCNN,
         }
 

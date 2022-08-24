@@ -1,0 +1,60 @@
+&CONTROL
+title     atod
+ml_ncpu    1
+gl_seed    1
+jobtype    md
+qm         fcnn
+maxenergy   0.05
+minenergy   0.05
+maxgrad    0.25
+mingrad	   0.25
+
+&Molecule
+ci	   4
+
+
+
+
+spin   0
+coupling 2 3, 2 4, 3 4
+
+
+
+
+
+
+
+&MD
+reset 1
+resetstep 0
+scale 1
+ninitcond 10
+format xyz
+temp 298
+step 2000
+size 20.67
+sfhp fssh
+nactype ktdc
+
+
+
+root 2
+gap 0.5
+
+
+dosoc 1
+
+
+gapsoc 0.3
+thermo nvt
+
+
+
+silent 1
+verbose 0
+
+
+direct 20000
+buffer 500
+record 0
+
